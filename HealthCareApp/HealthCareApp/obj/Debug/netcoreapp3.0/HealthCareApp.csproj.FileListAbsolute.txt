@@ -1,0 +1,11 @@
+C:\Users\Jacks LapTop\source\repos\HealthCareApp\HealthCareApp\bin\Debug\netcoreapp3.0\HealthCareApp.exe
+C:\Users\Jacks LapTop\source\repos\HealthCareApp\HealthCareApp\bin\Debug\netcoreapp3.0\HealthCareApp.deps.json
+C:\Users\Jacks LapTop\source\repos\HealthCareApp\HealthCareApp\bin\Debug\netcoreapp3.0\HealthCareApp.runtimeconfig.json
+C:\Users\Jacks LapTop\source\repos\HealthCareApp\HealthCareApp\bin\Debug\netcoreapp3.0\HealthCareApp.runtimeconfig.dev.json
+C:\Users\Jacks LapTop\source\repos\HealthCareApp\HealthCareApp\bin\Debug\netcoreapp3.0\HealthCareApp.dll
+C:\Users\Jacks LapTop\source\repos\HealthCareApp\HealthCareApp\bin\Debug\netcoreapp3.0\HealthCareApp.pdb
+C:\Users\Jacks LapTop\source\repos\HealthCareApp\HealthCareApp\obj\Debug\netcoreapp3.0\HealthCareApp.csprojAssemblyReference.cache
+C:\Users\Jacks LapTop\source\repos\HealthCareApp\HealthCareApp\obj\Debug\netcoreapp3.0\HealthCareApp.AssemblyInfoInputs.cache
+C:\Users\Jacks LapTop\source\repos\HealthCareApp\HealthCareApp\obj\Debug\netcoreapp3.0\HealthCareApp.AssemblyInfo.cs
+C:\Users\Jacks LapTop\source\repos\HealthCareApp\HealthCareApp\obj\Debug\netcoreapp3.0\HealthCareApp.dll
+C:\Users\Jacks LapTop\source\repos\HealthCareApp\HealthCareApp\obj\Debug\netcoreapp3.0\HealthCareApp.pdb
