@@ -14,6 +14,7 @@ namespace Hackathon2
     {
         public Form1()
         {
+            var HospitalList = new List<Hospital>();
             InitializeComponent();
         }
 
@@ -23,9 +24,28 @@ namespace Hackathon2
             this.Close();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+
+        private void pharmacy_Click(object sender, EventArgs e)
         {
-            this.MinimizeBox;
+            label3.Text = "Search for pharmacy by Eircode: ";
+            label4.Text = "Search for pharmacy by Name: ";
+        }
+
+        private void hospital_Click(object sender, EventArgs e)
+        {
+            label3.Text = "Search for hospital by Eircode: ";
+            label4.Text = "Search for hospital by Name: ";
+        }
+
+        private void gp_Click(object sender, EventArgs e)
+        {
+            label3.Text = "Search for GP by Eircode: ";
+            label4.Text = "Search for GP by Name: ";
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

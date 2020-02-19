@@ -32,8 +32,14 @@
             this.sidepanel = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pharmacy = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.hospital = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.gp = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.inputEircode = new System.Windows.Forms.TextBox();
@@ -41,9 +47,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.sidepanel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
+            this.flowLayoutPanel4.SuspendLayout();
+            this.flowLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -52,7 +61,9 @@
             // 
             this.sidepanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.sidepanel.Controls.Add(this.flowLayoutPanel1);
-            this.sidepanel.Controls.Add(this.flowLayoutPanel2);
+            this.sidepanel.Controls.Add(this.flowLayoutPanel3);
+            this.sidepanel.Controls.Add(this.flowLayoutPanel4);
+            this.sidepanel.Controls.Add(this.flowLayoutPanel5);
             this.sidepanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidepanel.Location = new System.Drawing.Point(0, 0);
             this.sidepanel.Margin = new System.Windows.Forms.Padding(0);
@@ -81,26 +92,95 @@
             this.label1.Text = "Healthcare locator";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // flowLayoutPanel2
+            // flowLayoutPanel3
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.Teal;
-            this.flowLayoutPanel2.Controls.Add(this.label2);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(10, 77);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(178, 41);
-            this.flowLayoutPanel2.TabIndex = 2;
+            this.flowLayoutPanel3.BackColor = System.Drawing.Color.Teal;
+            this.flowLayoutPanel3.Controls.Add(this.pharmacy);
+            this.flowLayoutPanel3.Controls.Add(this.label8);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(10, 77);
+            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(178, 41);
+            this.flowLayoutPanel3.TabIndex = 3;
             // 
-            // label2
+            // pharmacy
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Broadway", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(15, 10);
-            this.label2.Margin = new System.Windows.Forms.Padding(15, 10, 3, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Search";
+            this.pharmacy.AutoSize = true;
+            this.pharmacy.Font = new System.Drawing.Font("Broadway", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pharmacy.Location = new System.Drawing.Point(15, 10);
+            this.pharmacy.Margin = new System.Windows.Forms.Padding(15, 10, 3, 0);
+            this.pharmacy.Name = "pharmacy";
+            this.pharmacy.Size = new System.Drawing.Size(116, 20);
+            this.pharmacy.TabIndex = 0;
+            this.pharmacy.Text = "Pharmacy";
+            this.pharmacy.Click += new System.EventHandler(this.pharmacy_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Broadway", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(15, 40);
+            this.label8.Margin = new System.Windows.Forms.Padding(15, 10, 3, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(79, 20);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Search";
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.BackColor = System.Drawing.Color.Teal;
+            this.flowLayoutPanel4.Controls.Add(this.hospital);
+            this.flowLayoutPanel4.Controls.Add(this.label10);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(10, 124);
+            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(178, 41);
+            this.flowLayoutPanel4.TabIndex = 3;
+            // 
+            // hospital
+            // 
+            this.hospital.AutoSize = true;
+            this.hospital.Font = new System.Drawing.Font("Broadway", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hospital.Location = new System.Drawing.Point(15, 10);
+            this.hospital.Margin = new System.Windows.Forms.Padding(15, 10, 3, 0);
+            this.hospital.Name = "hospital";
+            this.hospital.Size = new System.Drawing.Size(91, 20);
+            this.hospital.TabIndex = 0;
+            this.hospital.Text = "Hospital";
+            this.hospital.Click += new System.EventHandler(this.hospital_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Broadway", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(15, 40);
+            this.label10.Margin = new System.Windows.Forms.Padding(15, 10, 3, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(79, 20);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "Search";
+            // 
+            // flowLayoutPanel5
+            // 
+            this.flowLayoutPanel5.BackColor = System.Drawing.Color.Teal;
+            this.flowLayoutPanel5.Controls.Add(this.gp);
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(10, 171);
+            this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(178, 41);
+            this.flowLayoutPanel5.TabIndex = 3;
+            // 
+            // gp
+            // 
+            this.gp.AutoSize = true;
+            this.gp.Font = new System.Drawing.Font("Broadway", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gp.Location = new System.Drawing.Point(15, 10);
+            this.gp.Margin = new System.Windows.Forms.Padding(15, 10, 3, 0);
+            this.gp.Name = "gp";
+            this.gp.Size = new System.Drawing.Size(37, 20);
+            this.gp.TabIndex = 0;
+            this.gp.Text = "GP";
+            this.gp.Click += new System.EventHandler(this.gp_Click);
             // 
             // label3
             // 
@@ -143,6 +223,7 @@
             this.label5.Size = new System.Drawing.Size(402, 34);
             this.label5.TabIndex = 6;
             this.label5.Text = "Search for Healthcare";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox1
             // 
@@ -166,7 +247,15 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(544, 236);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Submit";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -174,6 +263,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(882, 603);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label5);
@@ -188,8 +278,12 @@
             this.sidepanel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel2.PerformLayout();
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel3.PerformLayout();
+            this.flowLayoutPanel4.ResumeLayout(false);
+            this.flowLayoutPanel4.PerformLayout();
+            this.flowLayoutPanel5.ResumeLayout(false);
+            this.flowLayoutPanel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -202,8 +296,6 @@
         private System.Windows.Forms.FlowLayoutPanel sidepanel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox inputEircode;
@@ -211,6 +303,15 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.Label pharmacy;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+        private System.Windows.Forms.Label hospital;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
+        private System.Windows.Forms.Label gp;
+        private System.Windows.Forms.Button button1;
     }
 }
 
