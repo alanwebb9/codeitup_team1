@@ -19,5 +19,15 @@ namespace Hackathon2
             this.TotalGps = TotalGps;
 
         }
+
+        public override void SearchByEircode()
+        {
+
+        }
+
+        public override void ShowDetails()
+        {
+
+        }
     }
 }

@@ -2,15 +2,15 @@ Midland Regional Hospital Portlaoise,"Dublin Road, Portlaoise, Co. Laois, ",R32R
 Midland Regional Hospital Tullamore,"Arden Road, Tullamore, Co. Offaly, ",R35NY51,233923.1455,225877.1039,Children's Health Ireland,Paediatric ENT,Child,0-15,18 Months +,1420
 St James's Hospital Dublin,"James's Street, Dublin 8, ",D08NHY1,313433.6436,233460.873,Children's Health Ireland,Paediatric Neurology,Child,0-15, 0-3 Months,346
 Naas General Hospital,"Craddockstown Road, Naas, Co. Kildare, ",W91AE76,289392.2816,218724.4999,Children's Health Ireland,Paediatric Neurology,Child,16-64, 0-3 Months,8
-The Adelaide & Meath Hospital (Tallaght Hospital) Dublin,"Tallaght, Dublin 24",,308195.7986,227903.5429,Children's Health Ireland,Paediatric Neurology,Child,16-64, 3-6 Months,4
+The Adelaide & Meath Hospital (Tallaght Hospital) Dublin,"Tallaght, Dublin 24",W91AE71,308195.7986,227903.5429,Children's Health Ireland,Paediatric Neurology,Child,16-64, 3-6 Months,4
 Cavan General Hospital,"Lisdarn, Cavan, ",H12A5D7,241108.2195,305926.719,Children's Health Ireland,Paediatric Neurology,Child,16-64, 6-9 Months,7
-Louth County Hospital Dundalk,"Dublin Road, Dundalk",,304933.9162,305486.799,Children's Health Ireland,Paediatric Neurology,Child,16-64, 9-12 Months,4
+Louth County Hospital Dundalk,"Dublin Road, Dundalk",WG32A1,304933.9162,305486.799,Children's Health Ireland,Paediatric Neurology,Child,16-64, 9-12 Months,4
 Monaghan Hospital,"Monaghan, ",H18NV91,266828.5975,333908.8821,Children's Health Ireland,Paediatric Neurology,Child,16-64,12-15 Months,3
 Our Lady of Lourdes Hospital Drogheda,"Drogheda, Co. Louth, ",A92VW28,308563.4386,276047.75,Children's Health Ireland,Paediatric Neurosurgery,Child,16-64,15-18 Months,1
 Connolly Hospital Dublin,"Mill Road, Dublin 15, ",D15X40D,308545.2076,238839.27,Children's Health Ireland,Ophthalmology,Child,0-15, 0-3 Months,662
 Beaumont Hospital,"Beaumont Road, Dublin 9, ",D09C562,318014.4006,239461.7999,Children's Health Ireland,Ophthalmology,Child,16-64, 0-3 Months,11
 St Luke's General Hospital Kilkenny,"Freshford Road, Kilkenny, ",R95FY71,249849.5305,157441.6319,Children's Health Ireland,Ophthalmology,Child,16-64, 3-6 Months,5
-Wexford General Hospital,"Newtown Road, Wexford, Y35y17d",,303401.8406,122304.6848,Children's Health Ireland,Ophthalmology,Child,16-64, 6-9 Months,4
+Wexford General Hospital,"Newtown Road, Wexford, Y35y17d",F92AG21,303401.8406,122304.6848,Children's Health Ireland,Ophthalmology,Child,16-64, 6-9 Months,4
 Our Lady's Hospital Navan,"Navan, Co. Meath, ",C15RK7Y,286123.9386,267517.563,Children's Health Ireland,Ophthalmology,Child,16-64, 9-12 Months,11
 Midland Regional Hospital Mullingar,"Longford Road, Mullingar, Co. Westmeath, ",N91NA43,243131.5005,254000.7,Children's Health Ireland,Ophthalmology,Child,16-64,12-15 Months,3
 St Columcille's Hospital,"Bray Road, Loughlinstown, Co. Dublin, ",D18V9K1,324650.0136,223005.9479,Children's Health Ireland,Ophthalmology,Child,16-64,18 Months +,120
@@ -30,7 +30,7 @@ Sligo Regional Hospital,"The Mall, Sligo, ",F91H684,169786.3464,336269.7351,Chil
 University Hospital Galway,"Newcastle Road, Galway, ",H91YR71,128926.2994,225582.2939,Children's Health Ireland,Paediatrics,Child,16-64, 9-12 Months,10
 Portiuncula Hospital,"Ballinasloe, Co. Galway, ",H53T971,184339.0425,230731.3919,Children's Health Ireland,Paediatrics,Child,16-64,12-15 Months,7
 South Infirmary Victoria University Hospital,"Old Blackrock Road, Cork, ",T12X23H,168045.1354,71328.93777,Children's Health Ireland,Paed Cardiology,Child,0-15, 3-6 Months,711
-St John's Hospital,"St. John's Square, Limerick",,158298.4279,157008.8367,Children's Health Ireland,Paed Cardiology,Child,0-15, 6-9 Months,607
+St John's Hospital,"St. John's Square, Limerick",EVAEQ3,158298.4279,157008.8367,Children's Health Ireland,Paed Cardiology,Child,0-15, 6-9 Months,607
 Letterkenny University Hospital,"Kilmacrennan Road, Letterkenny, Co. Donegal, ",F92AE81,216990.1175,412551.1811,Children's Health Ireland,Paed Cardiology,Child,0-15,12-15 Months,377
 Merlin Park University Hospital,"Galway, ",H91N973,133719.3214,225686.7119,Children's Health Ireland,Paed Oncology,Child,0-15, 6-9 Months,2
 University Hospital Kerry,"Tralee, Co. Kerry, ",V92NX94,84653.57835,113945.3278,Children's Health Ireland,Paed Endocrinology,Child,0-15,15-18 Months,20

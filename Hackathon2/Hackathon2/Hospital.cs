@@ -26,7 +26,17 @@ namespace Hackathon2
             this.Total = Total;
         }
 
-       
+        public override void SearchByEircode()
+        {
+
+        }
+
+        public override void ShowDetails()
+        {
+
+        }
+
+
 
     }
 }

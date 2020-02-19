@@ -24,5 +24,7 @@ namespace Hackathon2
 
         }
 
+        public abstract void SearchByEircode();
+        public abstract void ShowDetails();
     }
 }

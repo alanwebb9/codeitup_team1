@@ -25,14 +25,47 @@ namespace Hackathon2
             this.Close();
         }
 
+        bool check1 = true;
+        bool check2 = false;
+        bool check3 = false;
 
         private void pharmacy_Click(object sender, EventArgs e)
+        {          
+            label3.Text = "Search for pharmacy by Eircode: ";
+            label4.Text = "Search for pharmacy by Name: ";
+            check1 = true;
+            check2 = false;
+            check3 = false;
+            
+        }
+
+        private void hospital_Click(object sender, EventArgs e)
+        {         
+            label3.Text = "Search for hospital by Eircode: ";
+            label4.Text = "Search for hospital by Name: ";
+
+            check1 = false;
+            check2 = true;
+            check3 = false;
+        }
+
+        private void gp_Click(object sender, EventArgs e)
+        {
+            label3.Text = "Search for GP by Eircode: ";
+            label4.Text = "Search for GP by Name: ";
+
+            check1 = false;
+            check2 = false;
+            check3 = true;
+        }
+
+        private void submit1_Click(object sender, EventArgs e)
         {
             List<Pharmacy> PharmacyList = new List<Pharmacy>();
 
 
-            var path = "pharmacy.csv"; // Habeeb, "Dubai Media City, Dubai"
-            using (TextFieldParser csvParser = new TextFieldParser(path))
+            var path1 = "pharmacy.csv"; // Habeeb, "Dubai Media City, Dubai"
+            using (TextFieldParser csvParser = new TextFieldParser(path1))
             {
                 csvParser.CommentTokens = new string[] { "#" };
                 csvParser.SetDelimiters(new string[] { "," });
@@ -49,17 +82,12 @@ namespace Hackathon2
                     PharmacyList.Add(h);
                 }
             }
-            label3.Text = "Search for pharmacy by Eircode: ";
-            label4.Text = "Search for pharmacy by Name: ";
-        }
 
-        private void hospital_Click(object sender, EventArgs e)
-        {
             List<Hospital> HospitalList = new List<Hospital>();
 
 
-            var path = "hospital.csv"; // Habeeb, "Dubai Media City, Dubai"
-            using (TextFieldParser csvParser = new TextFieldParser(path))
+            var path2 = "hospital.csv"; // Habeeb, "Dubai Media City, Dubai"
+            using (TextFieldParser csvParser = new TextFieldParser(path2))
             {
                 csvParser.CommentTokens = new string[] { "#" };
                 csvParser.SetDelimiters(new string[] { "," });
@@ -76,43 +104,102 @@ namespace Hackathon2
                     HospitalList.Add(h);
                 }
             }
-            label3.Text = "Search for hospital by Eircode: ";
-            label4.Text = "Search for hospital by Name: ";
-        }
 
-        private void gp_Click(object sender, EventArgs e)
-        {
-           
-                List<GP> PharmacyList = new List<GP>();
+            List<GP> GPList = new List<GP>();
 
 
-                var path = "GP.csv"; // Habeeb, "Dubai Media City, Dubai"
-                using (TextFieldParser csvParser = new TextFieldParser(path))
+            var path3 = "GP.csv"; // Habeeb, "Dubai Media City, Dubai"
+            using (TextFieldParser csvParser = new TextFieldParser(path3))
+            {
+                csvParser.CommentTokens = new string[] { "#" };
+                csvParser.SetDelimiters(new string[] { "," });
+                csvParser.HasFieldsEnclosedInQuotes = true;
+
+                // Skip the row with the column names
+                csvParser.ReadLine();
+
+                while (!csvParser.EndOfData)
                 {
-                    csvParser.CommentTokens = new string[] { "#" };
-                    csvParser.SetDelimiters(new string[] { "," });
-                    csvParser.HasFieldsEnclosedInQuotes = true;
+                    // Read current line fields, pointer moves to the next line.
+                    string[] fields = csvParser.ReadFields();
+                    GP h = new GP(fields[0], fields[1], fields[2], fields[3], fields[4], fields[5], fields[6], fields[7]);
+                    GPList.Add(h);
+                }
+            }
+           
 
-                    // Skip the row with the column names
-                    csvParser.ReadLine();
-
-                    while (!csvParser.EndOfData)
+            if (check1 == true )
+            {
+                string Eircode = inputEircode.Text;
+                foreach (Building a in PharmacyList)
+                {
+                    if (a.Eircode.Equals(Eircode))
                     {
-                        // Read current line fields, pointer moves to the next line.
-                        string[] fields = csvParser.ReadFields();
-                        GP h = new GP(fields[0], fields[1], fields[2], fields[3], fields[4], fields[5], fields[6], fields[7]);
-                        PharmacyList.Add(h);
+                        MessageBox.Show("Name: " + a.Name + "\n" + "Address: " + a.Address + "\n" + "Eircode: " + a.Eircode + "\n" + "Coordinate X: " + a.Coordinatex + "\n" + "Coordinate Y: " + a.Coordinatey);
                     }
                 }
-            
 
-            label3.Text = "Search for GP by Eircode: ";
-            label4.Text = "Search for GP by Name: ";
+                string Name = InputName.Text;
+                foreach (Building a in PharmacyList)
+                {
+                    if (a.Name.Equals(Name))
+                    {
+                        MessageBox.Show("Name: " + a.Name + "\n" + "Address: " + a.Address + "\n" + "Eircode: " + a.Eircode + "\n" + "Coordinate X: " + a.Coordinatex + "\n" + "Coordinate Y: " + a.Coordinatey);
+                    }
+                }
+            }
+
+            if (check2 == true )
+            {
+                string Eircode = inputEircode.Text;
+                foreach (Building a in HospitalList)
+                {
+                    if (a.Eircode.Equals(Eircode))
+                    {
+                        MessageBox.Show("Name: " + a.Name + "\n" + "Address: " + a.Address + "\n" + "Eircode: " + a.Eircode + "\n" + "Coordinate X: " + a.Coordinatex + "\n" + "Coordinate Y: " + a.Coordinatey);
+                    }
+                }
+
+                string Name = InputName.Text;
+                foreach (Building a in PharmacyList)
+                {
+                    if (a.Name.Equals(Name))
+                    {
+                        MessageBox.Show("Name: " + a.Name + "\n" + "Address: " + a.Address + "\n" + "Eircode: " + a.Eircode + "\n" + "Coordinate X: " + a.Coordinatex + "\n" + "Coordinate Y: " + a.Coordinatey);
+                    }
+                }
+            }
+
+            if (check3 == true )
+            {
+                string Eircode = inputEircode.Text;
+                foreach (Building a in GPList)
+                {
+                    if (a.Eircode.Equals(Eircode))
+                    {
+                        MessageBox.Show("Name: " + a.Name + "\n" + "Address: " + a.Address + "\n" + "Eircode: " + a.Eircode + "\n" + "Coordinate X: " + a.Coordinatex + "\n" + "Coordinate Y: " + a.Coordinatey);
+                    }
+                }
+
+                string Name = InputName.Text;
+                foreach (Building a in PharmacyList)
+                {
+                    if (a.Name.Equals(Name))
+                    {
+                        MessageBox.Show("Name: " + a.Name + "\n" + "Address: " + a.Address + "\n" + "Eircode: " + a.Eircode + "\n" + "Coordinate X: " + a.Coordinatex + "\n" + "Coordinate Y: " + a.Coordinatey);
+                    }
+                }
+            }
+
+
+
+
+
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
