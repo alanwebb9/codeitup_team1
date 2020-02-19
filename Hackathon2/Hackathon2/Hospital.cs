@@ -13,16 +13,20 @@ namespace Hackathon2
         public string AdultOrChild { get; set; }
         public string AgeProfile { get; set; }
         public string WaitingTime { get; set; }
-        public string name { get; set; }
+        public string Total { get; set; }
+        
 
-        public Hospital(string Eircode, string Address, decimal Coordinatex, decimal Coordinatey, string Group, string Speciality, string AdultOrChild, string AgeProfile, string WaitingTime, string Name) : base(Eircode, Address, Name, Coordinatex, Coordinatey)
+        public Hospital(string Name, string Address, string Eircode, string Coordinatex, string Coordinatey, string Group, string Speciality, string AdultOrChild, string AgeProfile, string WaitingTime, string Total) : base(Name, Address, Eircode, Coordinatex, Coordinatey)
         {
             this.Group = Group;
             this.Speciality = Speciality;
             this.AdultOrChild = AdultOrChild;
             this.AgeProfile = AgeProfile;
             this.WaitingTime = WaitingTime;
-            this.name = name;
+            this.Total = Total;
         }
+
+       
+
     }
 }

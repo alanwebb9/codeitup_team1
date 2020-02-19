@@ -11,10 +11,10 @@ namespace Hackathon2
         public string Name { get; set; }
         public string Address { get; set; }
         public string Eircode { get; set; }
-        public decimal Coordinatex { get; set; }
-        public decimal Coordinatey { get; set; }
+        public string Coordinatex { get; set; }
+        public string Coordinatey { get; set; }
 
-        public Building(string Name, string Eircode, string Address, decimal Coordinatex, decimal Coordinatey)
+        public Building(string Name, string Address, string Eircode, string Coordinatex, string Coordinatey)
         {
             this.Name = Name;
             this.Address = Address;

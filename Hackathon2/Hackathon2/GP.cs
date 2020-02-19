@@ -12,7 +12,7 @@ namespace Hackathon2
         public string TotalGps { get; set; }
         public string TotalPatients { get; set; }
 
-        public GP(string Eircode, string Address, decimal Coordinatex, decimal Coordinatey, string Name, string Year, string TotalGps, string TotalPatients) : base(Eircode, Address, Name, Coordinatex, Coordinatey)
+        public GP(string Name, string Address, string Eircode, string Coordinatex, string Coordinatey, string Year, string TotalGps, string TotalPatients) : base(Name, Address, Eircode, Coordinatex, Coordinatey)
         { 
             this.TotalPatients = TotalPatients;
             this.Year = Year;
